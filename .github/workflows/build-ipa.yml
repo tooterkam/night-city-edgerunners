@@ -17,10 +17,10 @@ jobs:
 
       - name: Build unsigned iOS app
         run: |
-          xcodebuild \
-            -project NightCityEdgerunners.xcodeproj \
-            -target NightCityEdgerunners \
-            -configuration Release \
+        xcodebuild \
+        -project NightCityEdgerunners.xcodeproj \
+        -scheme NightCityEdgerunners \
+        -configuration Release \
             -sdk iphoneos \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
